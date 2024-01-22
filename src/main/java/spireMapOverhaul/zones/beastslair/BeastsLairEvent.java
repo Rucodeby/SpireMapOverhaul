@@ -4,6 +4,7 @@ import basemod.ReflectionHacks;
 import basemod.abstracts.events.PhasedEvent;
 import basemod.abstracts.events.phases.CombatPhase;
 import basemod.abstracts.events.phases.TextPhase;
+import com.evacipated.cardcrawl.mod.stslib.actions.common.AllEnemyApplyPowerAction;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.SpawnMonsterAction;
@@ -14,7 +15,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.exordium.*;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 import javassist.CtBehavior;
-import spireMapOverhaul.actions.AllEnemyApplyPowerAction;
 import spireMapOverhaul.util.Wiz;
 import spireMapOverhaul.zones.beastslair.powers.DamageUpPower;
 import spireMapOverhaul.zones.beastslair.powers.FuryPower;
@@ -54,12 +54,12 @@ public class BeastsLairEvent extends PhasedEvent {
     @Override
     public void enterCombat() {
         super.enterCombat();
-        AbstractDungeon.actionManager.addToBottom(new AllEnemyApplyPowerAction(null, 2, (m) -> new ArtifactPower(m, 2)));
-        AbstractDungeon.actionManager.addToBottom(new AllEnemyApplyPowerAction(null, 10, (m) -> new FuryPower(m, 10)));
+        Wiz.atb(new AllEnemyApplyPowerAction(null, 2, (m) -> new ArtifactPower(m, 2)));
+        Wiz.atb(new AllEnemyApplyPowerAction(null, 10, (m) -> new FuryPower(m, 10)));
 
         Wiz.forAllMonstersLiving((m)->{
-            m.maxHealth = (int) (m.maxHealth * 1.75f);
-            m.currentHealth = (int) (m.currentHealth * 1.75f);
+            m.maxHealth = (int) (m.maxHealth * 1.25f);
+            m.currentHealth = (int) (m.currentHealth * 1.25f);
         }
         );
     }
@@ -72,8 +72,8 @@ public class BeastsLairEvent extends PhasedEvent {
             if (!used && AbstractDungeon.getCurrRoom().event instanceof BeastsLairEvent) {
                 AbstractMonster m = ReflectionHacks.getPrivate(__instance, SpawnMonsterAction.class, "m");
                 if (!isSlimebossSpawn(m)) {
-                    m.maxHealth = (int) (m.maxHealth * 1.75f);
-                    m.currentHealth = (int) (m.currentHealth * 1.75f);
+                    m.maxHealth = (int) (m.maxHealth * 1.25f);
+                    m.currentHealth = (int) (m.currentHealth * 1.25f);
                 }
 
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, null, new ArtifactPower(m, 2), 2));

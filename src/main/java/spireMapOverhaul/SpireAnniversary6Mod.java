@@ -25,12 +25,14 @@ import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractEvent;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rewards.RewardSave;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.screens.options.DropdownMenu;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import javassist.CtClass;
@@ -45,9 +47,10 @@ import spireMapOverhaul.patches.CustomRewardTypes;
 import spireMapOverhaul.patches.ZonePatches;
 import spireMapOverhaul.patches.ZonePerFloorRunHistoryPatch;
 import spireMapOverhaul.patches.interfacePatches.CampfireModifierPatches;
+import spireMapOverhaul.patches.interfacePatches.CombatModifierPatches;
 import spireMapOverhaul.patches.interfacePatches.EncounterModifierPatches;
-import spireMapOverhaul.rewards.AnyColorCardReward;
 import spireMapOverhaul.patches.interfacePatches.TravelTrackingPatches;
+import spireMapOverhaul.rewards.AnyColorCardReward;
 import spireMapOverhaul.rewards.HealReward;
 import spireMapOverhaul.rewards.SingleCardReward;
 import spireMapOverhaul.ui.*;
@@ -57,10 +60,17 @@ import spireMapOverhaul.util.Wiz;
 import spireMapOverhaul.util.ZoneShapeMaker;
 import spireMapOverhaul.zoneInterfaces.CampfireModifyingZone;
 import spireMapOverhaul.zoneInterfaces.EncounterModifyingZone;
+import spireMapOverhaul.zoneInterfaces.ModifiedEventRateZone;
 import spireMapOverhaul.zones.beastslair.BeastsLairZone;
 import spireMapOverhaul.zones.brokenspace.BrokenSpaceZone;
+import spireMapOverhaul.zones.gremlinTown.GremlinTown;
+import spireMapOverhaul.zones.gremlinTown.HordeHelper;
+import spireMapOverhaul.zones.gremlinTown.potions.*;
+import spireMapOverhaul.zones.keymaster.KeymasterZone;
 import spireMapOverhaul.zones.manasurge.ui.extraicons.BlightIcon;
 import spireMapOverhaul.zones.manasurge.ui.extraicons.EnchantmentIcon;
+import spireMapOverhaul.zones.windy.WindyZone;
+import spireMapOverhaul.zones.windy.patches.GoldRewardReductionPatch;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -72,6 +82,8 @@ import java.util.*;
 import java.util.function.Consumer;
 
 import static spireMapOverhaul.util.Wiz.adp;
+import static spireMapOverhaul.zones.gremlinTown.GremlinTown.PLATFORM_KEY;
+import static spireMapOverhaul.zones.gremlinTown.GremlinTown.PLATFORM_OGG;
 import static spireMapOverhaul.zones.manasurge.ManaSurgeZone.ENCHANTBLIGHT_KEY;
 import static spireMapOverhaul.zones.manasurge.ManaSurgeZone.ENCHANTBLIGHT_OGG;
 import static spireMapOverhaul.zones.storm.StormZone.*;
@@ -84,11 +96,13 @@ public class SpireAnniversary6Mod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         PostInitializeSubscriber,
+        OnStartBattleSubscriber,
         AddAudioSubscriber,
         PostRenderSubscriber,
         PostCampfireSubscriber,
         MaxHPChangeSubscriber,
         StartGameSubscriber,
+        StartActSubscriber,
         ImGuiSubscriber,
         PostUpdateSubscriber {
 
@@ -102,6 +116,8 @@ public class SpireAnniversary6Mod implements
     public static class Enums {
         @SpireEnum
         public static AbstractPotion.PotionRarity ZONE;
+        @SpireEnum
+        public static AbstractCard.CardTags GREMLIN;
     }
 
     public static SpireAnniversary6Mod thismod;
@@ -121,8 +137,6 @@ public class SpireAnniversary6Mod implements
     private static final String ATTACK_L_ART = modID + "Resources/images/1024/attack.png";
     private static final String SKILL_L_ART = modID + "Resources/images/1024/skill.png";
     private static final String POWER_L_ART = modID + "Resources/images/1024/power.png";
-
-
 
     public static boolean initializedStrings = false;
 
@@ -158,6 +172,10 @@ public class SpireAnniversary6Mod implements
         return modID + "Resources/images/relics/" + resourcePath;
     }
 
+    public static String makeMonsterPath(String resourcePath) {
+        return modID + "Resources/images/monsters/" + resourcePath;
+    }
+
     public static String makePowerPath(String resourcePath) {
         return modID + "Resources/images/powers/" + resourcePath;
     }
@@ -174,6 +192,10 @@ public class SpireAnniversary6Mod implements
         return modID + "Resources/images/orbs/" + resourcePath;
     }
 
+    public static String makeEventPath(String resourcePath) {
+        return modID + "Resources/images/events/" + resourcePath;
+    }
+
     public static void initialize() {
         thismod = new SpireAnniversary6Mod();
 
@@ -182,6 +204,7 @@ public class SpireAnniversary6Mod implements
             defaults.put("active", "TRUE");
             defaults.put("noRepeatZones", "TRUE");
             defaults.put("largeIconsMode", "FALSE");
+            defaults.put("enableShaders", "TRUE");
             modConfig = new SpireConfig(modID, "anniv6Config", defaults);
         } catch (Exception e) {
             e.printStackTrace();
@@ -257,6 +280,14 @@ public class SpireAnniversary6Mod implements
         TextCodeInterpreter.addAccessible(ZoneShapeMaker.class);
     }
 
+    @Override
+    public void receiveOnBattleStart(AbstractRoom abstractRoom) {
+        // I can't have this in my zone because it still needs called if I access this fight via the dev console
+        HordeHelper.needsUpdate = false;
+        if (AbstractDungeon.lastCombatMetricKey != null && AbstractDungeon.lastCombatMetricKey.equals(GremlinTown.GREMLIN_HORDE))
+            HordeHelper.initFight();
+    }
+
     public static void addMonsters() {
         for (AbstractZone zone : unfilteredAllZones) {
             if (zone instanceof EncounterModifyingZone) {
@@ -269,8 +300,19 @@ public class SpireAnniversary6Mod implements
 
         if (Loader.isModLoaded("widepotions")) {
             Consumer<String> whitelist = getWidePotionsWhitelistMethod();
-
+            whitelist.accept(LouseMilk.POTION_ID);
+            whitelist.accept(PreerelxsBlueRibbon.POTION_ID);
+            whitelist.accept(NoxiousBrew.POTION_ID);
+            whitelist.accept(MushroomSoup.POTION_ID);
+            whitelist.accept(GremsFire.POTION_ID);
         }
+
+        BaseMod.addPotion(LouseMilk.class, Color.WHITE.cpy(), null, null, LouseMilk.POTION_ID);
+        BaseMod.addPotion(PreerelxsBlueRibbon.class, Color.GOLDENROD.cpy(), null, null, PreerelxsBlueRibbon.POTION_ID);
+        BaseMod.addPotion(RitualBlood.class, RitualBlood.POTION_COLOR.cpy(), null, null, RitualBlood.POTION_ID);
+        BaseMod.addPotion(NoxiousBrew.class, NoxiousBrew.POTION_COLOR.cpy(), null, Color.DARK_GRAY.cpy(), NoxiousBrew.POTION_ID);
+        BaseMod.addPotion(MushroomSoup.class, MushroomSoup.POTION_COLOR.cpy(), null, Color.GRAY.cpy(), MushroomSoup.POTION_ID);
+        BaseMod.addPotion(GremsFire.class, Color.RED.cpy(), null, Color.ORANGE.cpy(), GremsFire.POTION_ID);
     }
 
     public static void addSaveFields() {
@@ -281,6 +323,7 @@ public class SpireAnniversary6Mod implements
         BaseMod.addSaveField(ZonePerFloorRunHistoryPatch.ZonePerFloorLog.SaveKey, new ZonePerFloorRunHistoryPatch.ZonePerFloorLog());
         BaseMod.addSaveField(EncounterModifierPatches.LastZoneNormalEncounter.SaveKey, new EncounterModifierPatches.LastZoneNormalEncounter());
         BaseMod.addSaveField(EncounterModifierPatches.LastZoneEliteEncounter.SaveKey, new EncounterModifierPatches.LastZoneEliteEncounter());
+        BaseMod.addSaveField(GoldRewardReductionPatch.SavableCombatGoldReduction.SaveKey, new GoldRewardReductionPatch.SavableCombatGoldReduction()); //windy zone
     }
 
     private static Consumer<String> getWidePotionsWhitelistMethod() {
@@ -335,7 +378,7 @@ public class SpireAnniversary6Mod implements
         loadStringsFile(langKey, OrbStrings.class);
         loadStringsFile(langKey, PotionStrings.class);
         loadStringsFile(langKey, EventStrings.class);
-        loadStringsFile(langKey, MonsterIcon.class);
+        loadStringsFile(langKey, MonsterStrings.class);
     }
 
     public void loadZoneStrings(Collection<AbstractZone> zones, String langKey) {
@@ -492,6 +535,15 @@ public class SpireAnniversary6Mod implements
                 throw new RuntimeException(e);
             }
         }
+        unfilteredAllZones.stream()
+                .filter(z -> z instanceof ModifiedEventRateZone)
+                .forEach(z -> {
+                    Set<String> specEvents =  ((ModifiedEventRateZone) z).addSpecificEvents();
+                    if(specEvents != null) {
+                        Set<String> eventList = zoneEvents.computeIfAbsent(z.id, k -> new HashSet<>());
+                        eventList.addAll(specEvents);
+                    }
+                });
     }
 
     @Override
@@ -501,6 +553,10 @@ public class SpireAnniversary6Mod implements
 
         // Mana Surge Audio
         BaseMod.addAudio(ENCHANTBLIGHT_KEY,ENCHANTBLIGHT_OGG);
+        // Windy Audio
+        BaseMod.addAudio(WindyZone.WINDY_KEY, WindyZone.WINDY_MP3);
+
+        BaseMod.addAudio(PLATFORM_KEY, PLATFORM_OGG);
     }
 
     private void registerCustomRewards() {
@@ -571,6 +627,9 @@ public class SpireAnniversary6Mod implements
     private AbstractZone filterViewedZone;
     private static final float DESC_X = 760f;
     private static final float DESC_Y = 575f;
+    private ModLabeledToggleButton shaderCheckbox;
+    private static final float SHADER_CHECKBOX_X = 400f;
+    private static final float SHADER_CHECKBOX_Y = 440f;
 
     private void initializeConfig() {
         UIStrings configStrings = CardCrawlGame.languagePack.getUIString(makeID("ConfigMenuText"));
@@ -615,6 +674,11 @@ public class SpireAnniversary6Mod implements
         settingsPanel.addUIElement(filterCheckbox);
         filterSetViewedZone(0);
 
+        shaderCheckbox = new ModLabeledToggleButton(configStrings.TEXT[6], SHADER_CHECKBOX_X, SHADER_CHECKBOX_Y, Color.WHITE, FontHelper.tipBodyFont, getShaderConfig(), null,
+                (label) -> {},
+                (button) -> setShaderConfig(button.enabled));
+        settingsPanel.addUIElement(shaderCheckbox);
+
         BaseMod.registerModBadge(badge, configStrings.TEXT[0], configStrings.TEXT[1], configStrings.TEXT[2], settingsPanel);
     }
 
@@ -639,6 +703,7 @@ public class SpireAnniversary6Mod implements
         });
 
         BeastsLairZone.initializeSaveFields();
+        KeymasterZone.initializeSaveFields();
     }
 
     @Override
@@ -663,7 +728,16 @@ public class SpireAnniversary6Mod implements
         BetterMapGenerator.clearActiveZones();
         if (!CardCrawlGame.loadingSave) {
             BeastsLairZone.clearBossList();
+            // Fix crash when you die to Gremlin horde and then start a new run
+            AbstractDungeon.lastCombatMetricKey = "";
         }
+        HordeHelper.hidePlatforms();
+        CombatModifierPatches.hideButton = true;
+    }
+
+    @Override
+    public void receiveStartAct() {
+        KeymasterZone.startOfActHasKeys = Settings.hasSapphireKey && Settings.hasEmeraldKey && Settings.hasRubyKey;
     }
 
     public static float time = 0f;
@@ -790,6 +864,21 @@ public class SpireAnniversary6Mod implements
                 e.printStackTrace();
             }
         }
+    }
+
+    private static void setShaderConfig(boolean enable) {
+        if (modConfig != null) {
+            modConfig.setBool("enableShaders", enable);
+            try {
+                modConfig.save();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static boolean getShaderConfig() {
+        return modConfig != null && modConfig.getBool("enableShaders");
     }
 
     private static ZoneShapeMaker shapeUi = null;

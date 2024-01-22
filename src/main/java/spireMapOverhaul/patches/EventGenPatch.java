@@ -16,6 +16,7 @@ import spireMapOverhaul.zoneInterfaces.ModifiedEventRateZone;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class EventGenPatch {
     @SpirePatch(
@@ -69,9 +70,15 @@ public class EventGenPatch {
         )
         public static void insert(Random rng, ArrayList<String> tmp) {
             if (validEvents != null) {
-                tmp.removeIf((e) -> !validEvents.contains(e));
-                if (tmp.isEmpty()) {
-                    SpireAnniversary6Mod.logger.info("Tried to force zone event, but no events found");
+                if (validEvents.isEmpty()) {
+                    SpireAnniversary6Mod.logger.info("Tried to force zone event, but no zone events defined. This is likely an error in zone setup.");
+                }
+                else {
+                    ArrayList<String> unseenValidEvents = validEvents.stream().filter(eid -> !SeenEvents.seenEvents.get(AbstractDungeon.player).contains(eid)).collect(Collectors.toCollection(ArrayList::new));
+                    if (!unseenValidEvents.isEmpty()) {
+                        tmp.removeIf(e -> true);
+                        tmp.addAll(unseenValidEvents);
+                    }
                 }
             }
         }
