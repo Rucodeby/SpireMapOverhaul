@@ -1,0 +1,9 @@
+{
+  "${ModID}:LazerZone": {
+    "TEXT": [
+      "Laser Hell",
+      "Deal #rdamage to random #ptarget at end of round. NL TODO.",
+      "Rucodeby"
+    ]
+  }
+}

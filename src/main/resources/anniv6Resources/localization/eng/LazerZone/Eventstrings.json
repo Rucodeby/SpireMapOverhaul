@@ -1,0 +1,20 @@
+{
+  "${ModID}:LazerEvent": {
+    "NAME": "TODO",
+    "DESCRIPTIONS": [
+      "welcome text",
+      "base text",
+      "after modifier text",
+      "after obtain text",
+      "failed drone text"
+      "leave text",
+    ],
+    "OPTIONS": [
+      "[Continue]",
+      "tmp",
+      "tmp",
+      "tmp",
+      "[Leave]"
+    ]
+  }
+}
