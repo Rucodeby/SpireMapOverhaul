@@ -1,0 +1,10 @@
+{
+  "${ModID}:CharacterInfluence": {
+    "TEXT": [
+      "Home of Another Character",
+      "Another character inhabits this biome. NL Combats and Shops have cards from that characters color.",
+      "(Flowers) HugYouTwenty",
+      "Home of "
+    ]
+  }
+}

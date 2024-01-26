@@ -1,0 +1,11 @@
+{
+  "${ModID}:LaserDrone": {
+    "NAME": "Laser Drone",
+    "FLAVOR": "---",
+    "DESCRIPTIONS": [
+      "Deal Turn*Act damage to random enemy at start of your turn."
+      "(Deals #b",
+      " damage"
+    ]
+  }
+}
