@@ -2,7 +2,7 @@
   "${ModID}:BrokenSpace": {
     "TEXT": [
       "Сломанное пространство",
-      "Space itself is broken here, even from afar you can sense that something is horribly wrong. NL NL Reward cards can be of any color (including curses). Add an extra card reward to combats. Relic drops are twisted into new forms.",
+      "Само пространство здесь сломанно, даже издали вы ощущаете, что здесь что-то невероятно неправильно. NL NL Карты в наградах могут быть любого цвета ( включая #pПроклятия ). Добавляет доп. награду с картами в конце боя. Реликвии в наградах искажены до новой формы.",
       "Tetraminus"
     ]
   }

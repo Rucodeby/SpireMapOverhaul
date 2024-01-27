@@ -1,10 +1,11 @@
 [
   {
-    "PROPER_NAME": "Broken",
+    "PROPER_NAME": "Сломанные реликвии",
     "NAMES": [
-      "Broken",
+      "сломанные реликвии",
+      "сломанные"
       "BrokenSpaceRelic"
     ],
-    "DESCRIPTION": "Relics corrupted by the Broken Space. They are forms of original relics, but they are twisted and have different effects."
+    "DESCRIPTION": "Реликвии поражённые искажением Сломанного простраства. Имеют вид оригинала, но в силу искажения имеют другие эффекты."
   }
 ]
