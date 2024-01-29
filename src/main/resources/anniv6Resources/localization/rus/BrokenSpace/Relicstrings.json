@@ -1,23 +1,23 @@
 {
   "${ModID}:BrokenDataDisk": {
     "NAME": "Сломанный Data Disk",
-    "FLAVOR": "нету",
+    "FLAVOR": "",
     "DESCRIPTIONS": [
-      "At the start of each combat, lose #b",
-      " #yFocus. The first time you #yChannel an Orb each turn, #yChannel another Orb of the same type."
+      "Отнимает #b",
+      " #yФокуса в начале боя. #yЗаряжает доп. Сферу при первой #yЗарядке Сферы в ходу."
     ]
   },
   "${ModID}:BrokenSneckoSkull": {
     "NAME": "Сломанный череп змекко",
-    "FLAVOR": "нету",
+    "FLAVOR": "",
     "DESCRIPTIONS": [
       "Увеличивает получаемые полож. эффекты на #b",
       ""
     ]
   },
   "${ModID}:BrokenRedSkull": {
-    "NAME": "Broken Red Skull",
-    "FLAVOR": "нету",
+    "NAME": "Сломанный Red Skull",
+    "FLAVOR": "",
     "DESCRIPTIONS": [
       "When you are above #b",
       "% #yHP, you have #b",
@@ -25,17 +25,17 @@
     ]
   },
   "${ModID}:BrokenOmamori": {
-    "NAME": "Broken Omamori",
-    "FLAVOR": "нету",
+    "NAME": "Сломанное Омамори",
+    "FLAVOR": "",
     "DESCRIPTIONS": [
-      "Add #b",
-      " #rCurses to your deck. Whenever you rest, #yUpgrade #b",
-      " random cards in your deck."
+      "При получении, добавляет #b",
+      " #rПроклятия в колоду. #yУлучшает #b",
+      " случайные карты в колоде после отдыха в лагере."
     ]
   },
   "${ModID}:BrokenDamaru": {
     "NAME": "Broken Damaru",
-    "FLAVOR": "нету",
+    "FLAVOR": "",
     "DESCRIPTIONS": [
       "At the end of your turn, you may #yExhaust a card in your hand. Gain #yMantra equal to its cost.",
       "Select a card to exhaust for Mantra."
@@ -44,7 +44,7 @@
   },
   "${ModID}:BrokenWingBoots": {
     "NAME": "Broken Wing Boots",
-    "FLAVOR": "нету",
+    "FLAVOR": "",
     "DESCRIPTIONS": [
       "When you would enter an event in a #y? room, choose between two events."
 
@@ -52,32 +52,32 @@
   },
   "${ModID}:BrokenSozu": {
     "NAME": "Сломанная содзу",
-    "FLAVOR": "нету",
+    "FLAVOR": "",
     "DESCRIPTIONS": [
       "In-combat potions cost [E] to use. When you spend energy on a potion, use another random potion.",
       " Energy"
     ]
   },
   "${ModID}:BrokenSneckoEye": {
-    "NAME": "Broken Snecko Eye",
-    "FLAVOR": "нету",
+    "NAME": "Сломанный глаз змекко",
+    "FLAVOR": "",
     "DESCRIPTIONS": [
-      "At the start of each turn, add #b",
-      " copy of a random card from your deck into your hand. It #yPurges, is #yEthereal, and is unreadable."
+      "Добавляет в руку копию случ. #b",
+      " карты в колоде. Она #yИзгоняется, #yЭфирная и нечитаемая."
     ]
   },
   "${ModID}:BrokenMawBank": {
     "NAME": "Broken Maw Bank",
-    "FLAVOR": "нету",
+    "FLAVOR": "",
     "DESCRIPTIONS": [
-      "Gain #b",
-      " #yGold next time you enter a shop, but lose #b",
-      " #yGold when you leave."
+      "Даёт #b",
+      " #yЗолота при след. посещении магазина и отнимает #b",
+      " #yЗолота, когда вы выйдете с него."
     ]
   },
   "${ModID}:BrokenPrayerWheel": {
     "NAME": "Broken Prayer Wheel",
-    "FLAVOR": "нету",
+    "FLAVOR": "",
     "DESCRIPTIONS": [
       "Card rewards contain #b",
       " less card, but each #yGold reward is multiplied by #b",
@@ -85,8 +85,8 @@
     ]
   },
   "${ModID}:BrokenMatryoshka": {
-    "NAME": "Broken Matryoshka",
-    "FLAVOR": "нету",
+    "NAME": "Сломанная матрёшка",
+    "FLAVOR": "",
     "DESCRIPTIONS": [
       "Add #b",
       " #yRelics to the rewards, but the next #b",
@@ -95,7 +95,7 @@
   },
   "${ModID}:BrokenSingingBowl": {
     "NAME": "Broken Singing Bowl",
-    "FLAVOR": "нету",
+    "FLAVOR": "",
     "DESCRIPTIONS": [
       "Whenever you gain Max HP, #yUpgrade #b",
         " random card in your deck."
