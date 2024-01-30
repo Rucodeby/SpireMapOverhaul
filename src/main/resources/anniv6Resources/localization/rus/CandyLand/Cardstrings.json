@@ -1,70 +1,70 @@
 {
   "${ModID}:Broccoli": {
-    "NAME": "Broccoli",
-    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity. NL Fleeting."
+    "NAME": "Брокколи",
+    "DESCRIPTION": "Даёт !M! Силы. NL Даёт !M! Ловкости. NL Мимолётная."
   },
   "${ModID}:CandyCane": {
     "NAME": "Candy Cane",
-    "DESCRIPTION": "Deal !D! damage. NL Fleeting."
+    "DESCRIPTION": "Наносит !D! урона. NL Мимолётная."
   },
   "${ModID}:Cookie": {
-    "NAME": "Cookie",
-    "DESCRIPTION": "Gain !B! Block. NL Fleeting."
+    "NAME": "Печенька",
+    "DESCRIPTION": "Даёт !B! Зашиты. NL Мимолётная."
   },
   "${ModID}:EnergyDrink": {
-    "NAME": "Energy Drink",
-    "DESCRIPTION": "Gain{@@}{!M!|1= [E] |2= [E] [E] |3= [E] [E] [E] |@= !M! [E] }. NL Fleeting."
+    "NAME": "Энергетик",
+    "DESCRIPTION": "{@@}Даёт {!M!|1= [E] |2= [E] [E] |3= [E] [E] [E] |@= !M! [E] }. NL Мимолётная."
   },
   "${ModID}:FastFood": {
-    "NAME": "Fast Food",
-    "DESCRIPTION": "Draw !M! cards. NL Fleeting."
+    "NAME": "Фастфуд",
+    "DESCRIPTION": "Вы берёте !M! карты. NL Мимолётная."
   },
   "${ModID}:Banana": {
-    "NAME": "Banana",
-    "DESCRIPTION": "Raise your Max HP by !M!. NL Fleeting."
+    "NAME": "Банан",
+    "DESCRIPTION": "Повышает Макс ОЗ на !M!. NL Мимолётная."
   },
   "${ModID}:ChocolateBar": {
-    "NAME": "Chocolate Bar",
-    "DESCRIPTION": "Gain !M! Regen. NL Fleeting."
+    "NAME": "Шоколадка",
+    "DESCRIPTION": "Даёт !M! Регенерации. NL Мимолётная."
   },
   "${ModID}:Cocktail": {
-    "NAME": "Cocktail",
-    "DESCRIPTION": "Obtain a random drinkable potion. NL Fleeting."
+    "NAME": "Коктейль",
+    "DESCRIPTION": "Даёт случайное зелье. NL Мимолётная."
   },
   "${ModID}:GoldCandy": {
-    "NAME": "Gold Candy",
-    "DESCRIPTION": "Gain !M! Gold. NL Fleeting."
+    "NAME": "Золотая конфета",
+    "DESCRIPTION": "Даёт !M! Золота. NL Мимолётная."
   },
   "${ModID}:Cake": {
-    "NAME": "Cake",
-    "DESCRIPTION": "Gain !B! Block. NL Block is not removed at the start of your next{@@}{!M!|1= turn|@= !M! turns}. NL Fleeting."
+    "NAME": "Тортик",
+    "DESCRIPTION": "{@@}Даёт !B! Защиты. NL Защита не исчезнет в начале {!M!|1=вашего след. хода|@= !M! ваших след. ходов}. NL Мимолётная."
   },
   "${ModID}:FrozenYoghurt": {
-    "NAME": "Frozen Yoghurt",
-    "DESCRIPTION": "Gain !M! ${ModID}:Metallicize. NL Gain !${ModID}:m2! Vulnerable. NL Fleeting."
+    "NAME": "Замороженный йогурт",
+    "DESCRIPTION": "Даёт !M! ${ModID}:Металлизации. NL Даёт !${ModID}:m2! Уязвимости. NL Мимолётная."
   },
   "${ModID}:JawBreaker": {
     "NAME": "Jaw Breaker",
-    "DESCRIPTION": "Deal !D! damage. NL Fleeting."
+    "DESCRIPTION": "Наносит !D! урона. NL Мимолётная."
   },
   "${ModID}:JellyBeans": {
-    "NAME": "Jelly Beans",
-    "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. NL Gain !${ModID}:m2! Weak. NL Fleeting."
+    "NAME": "Мармеладки",
+    "DESCRIPTION": "Накладывает !M! Уязвимости на ВСЕХ врагов. NL Даёт !${ModID}:m2! Слабости. NL Мимолётная."
   },
   "${ModID}:Milk": {
-    "NAME": "Milk",
-    "DESCRIPTION": "Apply !${ModID}:m2! Artifact. NL Gain !M! Artifact. NL Fleeting."
+    "NAME": "Молоко",
+    "DESCRIPTION": "Накладывает !${ModID}:m2! Артефакта. NL Даёт !M! Артефакта. NL Мимолётная."
   },
   "${ModID}:Pepper": {
-    "NAME": "Pepper",
-    "DESCRIPTION": "Gain !M! Strength. NL Lose !${ModID}:m2! Dexterity. NL Fleeting."
+    "NAME": "Перчик",
+    "DESCRIPTION": "Даёт !M! Силы. NL Отнимает !${ModID}:m2! Ловкости. NL Мимолётная."
   },
   "${ModID}:PoisonedApple": {
-    "NAME": "Poisoned Apple",
-    "DESCRIPTION": "Apply !M! Poison. NL Take !${ModID}:m2! damage. NL Fleeting."
+    "NAME": "Отравленное яблоко",
+    "DESCRIPTION": "Накладывает !M! Яда. NL Наносит вам !${ModID}:m2! урона. NL Мимолётная."
   },
   "${ModID}:ChewingGum": {
-    "NAME": "Chewing Gum",
-    "DESCRIPTION": "Draw !M! cards and gain{@@}{!M!|1= [E] |2= [E] [E] |3= [E] [E] [E] |@= !M! [E] } . NL Add *Slime to the top of your draw pile. NL Fleeting."
+    "NAME": "Жвачка",
+    "DESCRIPTION": "{@@}Вы берёте !M! карты и получаете{!M!|1= [E] |2= [E] [E] |3= [E] [E] [E] |@= !M! [E] } . NL Добавляет *В *слизи на верх стопки добора. NL Мимолётная."
   }
 }

@@ -1,10 +1,10 @@
 {
   "${ModID}:CandyLand": {
     "TEXT": [
-      "Candy Land",
-      "All rewards here are edible. It will be hard to improve much while in this biome, as most rewards are healing, max HP or otherwise temporary.",
+      "Сладкие просторы",
+      "Все награды здесь съедобные. Большинство наград содержат повышение макс ОЗ, лечение или временные эффекты, так что здесь булет сложно усилить своего персонажа.",
       "Jack Renoson",
-      " Also, raise your max HP by 5."
+      " и повысьте макс. ОЗ на 5."
     ]
   }
 }
