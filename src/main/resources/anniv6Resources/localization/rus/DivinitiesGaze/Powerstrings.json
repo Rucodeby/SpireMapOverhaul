@@ -1,6 +1,6 @@
 {
   "${ModID}:VerdictPower": {
-    "NAME": "Verdict",
-    "DESCRIPTIONS": ["At the start of this creature's turn, if its current HP is less than its #yVerdict, it dies. Otherwise, it gains #b5 #yVerdict."]
+    "NAME": "Вердикт",
+    "DESCRIPTIONS": ["Данное существо погибнет в конце своего хода, если его ОЗ меньше данного эффекта, иначе оно получает #b5 #yВердикта."]
   }
 }

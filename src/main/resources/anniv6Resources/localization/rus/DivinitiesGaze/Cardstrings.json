@@ -1,30 +1,30 @@
 {
   "${ModID}:Clairvoyance": {
-    "NAME": "Clairvoyance",
-    "DESCRIPTION": "{@@}Retain. NL If this card is in your hand at the start of your turn, draw {!M!|1=a card|@=!M! cards}. {!M!|1=It|@=They} gain{!M!|1=s|@=} Retain until played. NL Exhaust.",
+    "NAME": "Ясновидение",
+    "DESCRIPTION": "{@@}Оставляется. NL Вы берёте карт{!M!|@=|&1=у|&2,&3,&4=ы|&11,&12,&13,&14=}. Добавляет {!M!|1=ей|@=им} Оставляется, пока {!M!|1=она|@=они} не разыграны. NL Сжигается.",
     "EXTENDED_DESCRIPTION": [
       "I see ALL!",
       "I reject this gift..."
     ]
   },
   "${ModID}:Verdict": {
-    "NAME": "Verdict",
-    "DESCRIPTION": "Apply !M! ${ModID}:Verdict. NL Exhaust.",
+    "NAME": "Вердикт",
+    "DESCRIPTION": "Накладывает !M! ${ModID}:Вердикта. NL Сжигается.",
     "EXTENDED_DESCRIPTION": [
       "By honor, be judged!"
     ]
   },
   "${ModID}:GuidingLight": {
-    "NAME": "Guiding Light",
-    "DESCRIPTION": "{@@}Unplayable. When drawn, Exhaust this, then draw cards until your hand is full.{!Upgrades!|>0= NL Upgrade all cards in your hand.|@=}",
+    "NAME": "Путеводный свет",
+    "DESCRIPTION": "{@@}Неиграбельная. Вы берёте карты, пока не наберёте полную руку и сжигаете эту карту, когда она добирается.{!Upgrades!|>0= NL Улучшает все карты в руке.|@=}",
     "EXTENDED_DESCRIPTION": [
       "The path is laid bare.",
       "I can't play this card."
     ]
   },
   "${ModID}:Inevitability": {
-    "NAME": "Inevitability",
-    "DESCRIPTION": "Unplayable. Retain. At the end of your turn, deal !M! damage to ALL enemies and gain !B! Block. NL Increase these amounts by !${ModID}:secondMagic}! this combat.",
+    "NAME": "Неизбежность",
+    "DESCRIPTION": "Неиграбельная. Оставляется. Наносит !M! урона ВСЕМ врагам и даёт !B! Защиты. NL Повышает эти значения на !${ModID}:secondMagic}! до конца боя.",
     "EXTENDED_DESCRIPTION": [
       "This is The End.",
       "Begone!",
@@ -34,11 +34,11 @@
     ]
   },
   "${ModID}:Mitosis": {
-    "NAME": "Mitosis",
-    "DESCRIPTION": "Deal !M! damage for ALL your *Mitoses or *Statuses. NL When you draw this, shuffle a copy into your draw pile. Exhaust.",
+    "NAME": "Митоз",
+    "DESCRIPTION": "Наносит !M! урона за каждую карту *Статуса или *Митоз в колоде. NL Добавляет в стопку добора свою копию, когда добирается. Сжигается.",
     "EXTENDED_DESCRIPTION": [
       "Grow...",
-      " NL (Deals !D! damage.)"
+      " NL (Наносит !D! урона.)"
     ]
   }
 }

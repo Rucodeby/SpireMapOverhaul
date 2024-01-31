@@ -1,8 +1,8 @@
 [
   {
     "ID": "${ModID}:Verdict",
-    "PROPER_NAME": "Verdict",
-    "NAMES": ["verdict"],
-    "DESCRIPTION": "A creature with #yVerdict dies at the start of its turn if its current HP is less than its #yVerdict. Otherwise, it gains #b5 #yVerdict."
+    "PROPER_NAME": "Вердикт",
+    "NAMES": ["вердикт", "вердикта"],
+    "DESCRIPTION": "Существо с #yВердиктом погибает в конце своего хода, если его ОЗ меньше количества эффекта, иначе оно получает #b5 #yВердикта."
   }
 ]
