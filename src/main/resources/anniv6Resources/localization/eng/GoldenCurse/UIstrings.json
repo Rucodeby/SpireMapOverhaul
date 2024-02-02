@@ -1,14 +1,14 @@
 {
   "${ModID}:GoldenCurse": {
     "TEXT": [
-      "Golden Curse",
-      "The corruption of greed has manifested here. NL NL Combats will drop more rewards, but they cost gold to claim. Gold rewards will not drop.",
+      "Золотое проклятие",
+      "Здесь обнаружилась порча жадности. NL NL После сражений больше наград, но они будут стоить золото, а оно его самого в наградах не будет.",
       "Tetraminus"
     ]
   },
   "${ModID}:GreedCurse": {
     "TEXT": [
-      " | Cost: "
+      " | Стоит - "
     ]
   }
 }

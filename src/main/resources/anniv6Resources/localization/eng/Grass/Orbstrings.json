@@ -2,37 +2,37 @@
 {
 	"${ModID}:BellPepper":
 	{
-		"DESCRIPTION": ["Apply {0} #yPoison to a random enemy {1} time(s)."],
-		"NAME": "Bell Pepper"
+		"DESCRIPTION": ["Накладывает {0} #yЯда на случ. врага {1} раз(а)."],
+		"NAME": "Болгарский перец"
 	},
 	"${ModID}:Carrot":
 	{
-		"DESCRIPTION": ["Deal {0} damage to a random enemy {1} time(s)."],
-		"NAME": "Carrot"
+		"DESCRIPTION": ["Наносит {0} урона случ. врагу {1} раз(а)."],
+		"NAME": "Морковь"
 	},
 	"${ModID}:Leek":
 	{
-		"DESCRIPTION": ["Apply {0} #yWeak to a random enemy {1} time(s)."],
-		"NAME": "Leek"
+		"DESCRIPTION": ["Накладывает {0} #yСлабости на случ. врага {1} раз(а)."],
+		"NAME": "Лук-порей"
 	},
 	"${ModID}:Onion":
 	{
-		"DESCRIPTION": ["Apply {0} #yVulnerable to a random enemy {1} time(s)."],
-		"NAME": "Onion"
+		"DESCRIPTION": ["Накладывает {0} #yУязвимости на случ. врага {1} раз(а)."],
+		"NAME": "Лук"
 	},
 	"${ModID}:Pumpkin":
 	{
-		"DESCRIPTION": ["Gain {0} #yBlock."],
-		"NAME": "Pumpkin"
+		"DESCRIPTION": ["Даёт {0} #yЗащиты."],
+		"NAME": "Тыква"
 	},
 	"${ModID}:Radish":
 	{
-		"DESCRIPTION": ["Deal {0} damage to a random enemy {1} time(s)."],
-		"NAME": "Radish"
+		"DESCRIPTION": ["Наносит {0} урона случ. врагу {1} раз(а)."],
+		"NAME": "Редис"
 	},
 	"${ModID}:Tomato":
 	{
-		"DESCRIPTION": ["Gain {0} #yStrength."],
-		"NAME": "Tomato"
+		"DESCRIPTION": ["Даёт {0} #yСилы."],
+		"NAME": "Помидор"
 	}
 }

@@ -3,22 +3,22 @@
   "${ModID}:FrigidPower": {
     "NAME": "Frigid",
     "DESCRIPTIONS": [
-      "Apply #yFrostbite to the first card you draw each turn.",
+      "Накладывает #yFrostbite to the first card you draw each turn.",
       "Apply #yFrostbite to the first #b",
       " cards you draw each turn."
     ]
   },
   "${ModID}:LeavePower": {
-    "NAME": "Leave",
+    "NAME": "Побег",
     "DESCRIPTIONS": [
-      "If this creature would be killed in combat, they leave instead."
+      "Данное существо убежит вместо гибели."
     ]
   },
   "${ModID}:ChillPower": {
-  "NAME": "Chill",
+  "NAME": "Прохлада",
   "DESCRIPTIONS": [
-    "Decreases attack damage by #b",
-    " this turn."
+    "Снижает урон от атак на #b",
+    " в этом ходу."
   ]
 }
 }

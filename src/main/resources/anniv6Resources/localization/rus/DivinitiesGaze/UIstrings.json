@@ -1,8 +1,8 @@
 {
   "${ModID}:DivinitiesGaze": {
     "TEXT": [
-      "Divinities' Gaze",
-      "Powerful divinities have descended! Are you worthy of their attention, and can you withstand it? NL NL At the start of combat, receive a #gpowerful #gcard and some #rstatuses from a random divinity.",
+      "Божественный взор",
+      "Могущественые божества снизошли к нам! Достойны ли вы их внимания и сможете ли устоять? NL NL Добавляет в колоду в начале боя #gсильную #gкарту и #rстатусы от случайного божества.",
       "Shammy, NoelleDevo, PitohuiArt"
     ]
   },
