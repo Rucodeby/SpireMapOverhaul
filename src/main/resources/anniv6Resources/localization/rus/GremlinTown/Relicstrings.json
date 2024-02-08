@@ -42,10 +42,10 @@
     ]
   },
   "${ModID}:Lockpicks": {
-    "NAME": "Lock Picks",
-    "FLAVOR": "A common Gremlin \"Investment.\"",
+    "NAME": "Отмычки",
+    "FLAVOR": "Самое обычное \"Investment\" гремлинов",
     "DESCRIPTIONS": [
-      "Gain #b{0} #yGold upon entering a rest site."
+      "Вы получаете #b{0} #yЗолота, посещая лагерь."
     ]
   },
   "${ModID}:Bowtie": {
@@ -56,8 +56,8 @@
     ]
   },
   "${ModID}:LousePlushie": {
-    "NAME": "Louse Plushie",
-    "FLAVOR": "A toy for Gremlin children.",
+    "NAME": "Плюш Воши",
+    "FLAVOR": "Игрушка для детей гремлинов.",
     "DESCRIPTIONS": [
       "The first time you take unblocked Attack damage each combat, gain #b{0} #yBlock next turn."
     ]

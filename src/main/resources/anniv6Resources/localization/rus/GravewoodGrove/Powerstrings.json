@@ -1,8 +1,8 @@
 {
   "${ModID}:DeadBranch": {
-    "NAME": "Dead Branch",
+    "NAME": "Сухая ветка",
     "DESCRIPTIONS": [
-      "Whenever you #yExhaust a card, add a random card to your hand. NL #yExhaust the first card you play each turn."
+      "Добавляет в руку случайную карту, когда #yСжигается карта. NL #yСжигает первую разыгрываемую в ходу карту."
     ]
   }
 }

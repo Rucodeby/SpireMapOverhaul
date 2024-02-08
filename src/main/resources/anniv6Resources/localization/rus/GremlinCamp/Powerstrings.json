@@ -1,7 +1,7 @@
 {
   "${ModID}:PlayerPoisonPower": {
     "DESCRIPTIONS": [
-      "At the end of your turn, take #b%s damage, then reduce #yPoison by #b1."
+      "Вы получаете #b%s урона и снимаете с себя #b1 #yЯда в конце вашего хода."
     ]
   }
 }

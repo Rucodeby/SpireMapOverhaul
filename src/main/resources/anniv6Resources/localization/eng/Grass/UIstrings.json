@@ -1,13 +1,13 @@
 {
   "${ModID}:Grass": {
     "TEXT": [
-      "Grass",
-      "When you enter battles, you will see grass. When you have leftover Energy, grass grows. When you pluck grass, cool things will happen. NL NL When you see relics in rewards or shops, they will likely be related to grass.",
+      "Травушка",
+      "Вы сможете встретить траву на поле боя. Она растёт от оставшейся энергии в конце хода. Что-то крутое будет происходить при сборе травы. NL NL Реликвии в наградах и магазинах вероятней всего будут связаны с травой.",
       "Pina Colada",
-      "A random #yGrass grows by #b1 level for each unspent [E] at the end of your turn. The higher its level, the stronger its effect is. NL NL When it has grown at least once, click on it during your turn to pluck it and use its effect. Each grass can only be used once.",
-      "#bLevel #b",
-      "#gLeft-click #gto #gpluck",
-      "#rGrass #rneeds #rat #rleast #r1 #rlevel #rto #rpluck"
+      "За каждую оставшуюся [E] случ. #yТрава повышает свой уровень на #b1 в конце вашего хода. С повышением уровня усиливается эффект. NL NL Нажмите на траву, чтобы собрать её и получить соответствующий эффект. Каждая трава может быть использована один раз.",
+      "#bУровень #b",
+      "#gНажмите #gЛКМ #gдля #gсбора",
+      "#rТраве #rтребуется #rхотя #rбы #r1 #rуровень, #rдля #rсбора"
     ]
   }
 }

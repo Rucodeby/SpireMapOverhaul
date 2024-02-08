@@ -2,20 +2,20 @@
   "${ModID}:GremlinCook": {
     "MOVES": [
       "Let Him Cook",
-      "Field Rations",
-      "Rotten Food",
-      "Tackle"
+      "Полевые рационы",
+      "Сгнившая еда",
+      "Толчок"
     ],
-    "NAME": "Gremlin Cook",
+    "NAME": "Гремлин-повар",
     "DIALOG": [
-      "Eat up, boys!"
+      "Набивайте животы, ребята!"
     ]
   },
   "${ModID}:GremlinDog": {
     "MOVES": [
-      "Poison Fang",
-      "Defensive nibble"
+      "Ядовитый клык",
+      "Оборонительный щипок"
     ],
-    "NAME": "Feral Gremlin"
+    "NAME": "Одичалый гремлин"
   }
 }

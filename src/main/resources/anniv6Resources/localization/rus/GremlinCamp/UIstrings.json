@@ -1,8 +1,8 @@
 {
   "${ModID}:GremlinCamp": {
     "TEXT": [
-      "Gremlin Camp",
-      "A large group of #rgremlins has taken over this space. Keep your eyes peeled, you won't be able to sleep there.",
+      "Лагерь Гремлинов",
+      "Большая группа #rгремлинов захватила это место. Держите глаза открытыми, здесь у вас не выйдет спать.",
       "(Gk) erasels"
     ]
   },
@@ -16,8 +16,8 @@
   },
   "${ModID}:ScavengeOption": {
     "TEXT": [
-      "Scavenge",
-      "Gain %s-%s gold."
+      "Покопаться",
+      "Получите %s-%s золота."
     ]
   }
 }
