@@ -11,20 +11,20 @@
       "You see no reason to pay for a free concert."
     ],
     "OPTIONS": [
-      "[Continue]",
+      "[Продолжить]",
       "[A Little] #y{0} #yGold: #gRemove #ga #gcard #gfrom #gyour #gdeck.",
       "[A Moderate Amount] #y{0} #yGold: #gGain #g{1} #gMax #gHP.",
       "[A Lot] #y{0} #yGold: #gUpgrade #gall #gAttacks.",
       "[Locked] Requires: {0} Gold.",
-      "[None] Leave.",
-      "[Leave]",
-      "Select a Card to Remove."
+      "[None] Уйти.",
+      "[Уйти]",
+      "Выберите карту, которую хотите удалить из колоды."
     ]
   },
   "${ModID}:GremlinWheel": {
-    "NAME": "Wheel of Change",
+    "NAME": "Колесо перемен",
     "DESCRIPTIONS": [
-      "You come upon a dapper looking, cheery gremlin. NL \"It's time to spin the wheel! Are you ~R~ ~E~ ~A~ ~D~ ~Y~ ~?~ Of course you are!\"",
+      "Вы натыкаетесь на задорного элегантно одетого гремлина. NL «Пришло время крутить колесо! Вы ~Г~ ~О~ ~Т~ ~О~ ~В~ ~Ы~ ~?~ Ну разумеется!»",
       "\"Uh oh! NL You lose!\" NL You spot him readying a shiv...",
       "You flail about in a panic.  While you ineffectively run around he gets you a few times with a crude shiv. NL \"The price has been paid!!\" NL and with that, both the gremlin and its wheel disappear in a puff of smoke.\"",
       "You decide you lost the game fair and square.  You let him get you a few times with a crude shiv. NL \"The price has been paid!!\" NL and with that, both the gremlin and its wheel disappear in a puff of smoke.\"",
@@ -34,14 +34,14 @@
       "Good riddance! You search the room and uncover a small stash of #yGold!"
     ],
     "OPTIONS": [
-      "[Play]",
+      "[Играть]",
       "[Panic!]",
       "[Submit]",
       "[What?]",
       "[Fight!]",
-      "[Ouch] #rLose #r{0} #rHP.",
-      "[Leave]",
-      "[Yay!] #yGain #y{0} #yGold."
+      "[Ouch] #rПотерять #r{0} #rОЗ.",
+      "[Уйти]",
+      "[Yay!] #yПолучить #y{0} #yзолота."
     ]
   }
 }

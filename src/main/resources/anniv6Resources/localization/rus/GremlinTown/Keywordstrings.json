@@ -1,18 +1,18 @@
 [
   {
-    "PROPER_NAME": "Vigor",
+    "PROPER_NAME": "Бодрость",
     "NAMES": [
-      "Vigor",
-      "vigor"
+      "Бодрость",
+      "бодрости"
     ],
-    "DESCRIPTION": "Your next #yAttack deals more damage"
+    "DESCRIPTION": "Ваша след. Атака наносит доп. урон."
   },
   {
-    "PROPER_NAME": "Slow",
+    "PROPER_NAME": "Медлительность",
     "NAMES": [
-      "Slow",
-      "slow"
+      "медлительность",
+      "медлительности"
     ],
-    "DESCRIPTION": "Whenever you play a card, the enemy receives 10% more damage from #yAttacks that turn."
+    "DESCRIPTION": "За каждую разыгранную вами карту враг получает на 10% больше урона от #yАтак в этом ходу."
   }
 ]

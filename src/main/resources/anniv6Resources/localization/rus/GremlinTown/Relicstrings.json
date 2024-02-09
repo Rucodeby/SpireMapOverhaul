@@ -1,44 +1,44 @@
 {
   "${ModID}:Duelity": {
-    "NAME": "Duelity",
+    "NAME": "Дуэльность",
     "FLAVOR": "Apparently Gremlin Nobs are bad at spelling.",
     "DESCRIPTIONS": [
-      "Whenever you play a Skill, gain #b1 temporary #yStrength."
+      "Даёт #b1 временной #yСилы, когда вы разыгрываете Навык."
     ]
   },
   "${ModID}:GremlinClaw": {
     "NAME": "Gremlin Claw",
     "FLAVOR": "Gremlins can be very dangerous even without a weapon.",
     "DESCRIPTIONS": [
-      "Whenever a non-minion enemy dies, heal #b1 HP."
+      "Восполняет #b1 ОЗ, когда погибает враг, кроме приспешников."
     ]
   },
   "${ModID}:GremlinHood": {
     "NAME": "Gremlin Hood",
     "FLAVOR": "The orange mask bandits never really caught on.",
     "DESCRIPTIONS": [
-      "At the start of each combat, choose #b1 of #b3 random #yGremlin cards and add the chosen card into your hand."
+      "Выберите #b1 из #b3 случ. карт #yГремлинов и добавьте её в руку в начале боя."
     ]
   },
   "${ModID}:NobClub": {
     "NAME": "Nob Club",
     "FLAVOR": "You can barely lift it.",
     "DESCRIPTIONS": [
-      "Every time you play #b{0} Attacks, apply #b1 #yVulnerable to a random enemy."
+      "Разыгрывая #b{0} Атаки за ход вы накладываете #b1 #yУязвимости на случ. врага."
     ]
   },
   "${ModID}:GremlinStaff": {
     "NAME": "Gremlin Staff",
     "FLAVOR": "Your hand tingles when you hold it.",
     "DESCRIPTIONS": [
-      "At the start of your #b3rd turn, gain #b{0} #yVigor."
+      "Даёт #b{0} #yБодрости в начале #b3-го хода."
     ]
   },
   "${ModID}:WarHorn": {
     "NAME": "War Horn",
     "FLAVOR": "When you blow on this horn, you feel like you could take on anything.",
     "DESCRIPTIONS": [
-      "Start each Boss combat with #b3 #yStrength."
+      "Даёт #b3 #yСилы в начале битвы с боссом."
     ]
   },
   "${ModID}:Lockpicks": {
@@ -52,14 +52,14 @@
     "NAME": "Bow Tie",
     "FLAVOR": "It makes you look twice as professional.",
     "DESCRIPTIONS": [
-      "Shop cards are #yUpgraded."
+      "#yУлучшает покупаемые в магазине карты."
     ]
   },
   "${ModID}:LousePlushie": {
     "NAME": "Плюш Воши",
     "FLAVOR": "Игрушка для детей гремлинов.",
     "DESCRIPTIONS": [
-      "The first time you take unblocked Attack damage each combat, gain #b{0} #yBlock next turn."
+      "Даёт #b{0} #yЗащиты на след. ход, при первом получении урона по ОЗ в бою."
     ]
   }
 }

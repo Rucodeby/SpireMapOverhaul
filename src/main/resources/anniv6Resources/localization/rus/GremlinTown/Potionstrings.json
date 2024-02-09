@@ -1,18 +1,18 @@
 {
   "${ModID}:LouseMilk": {
-    "NAME": "Louse Milk",
+    "NAME": "Молочко Вошей",
     "DESCRIPTIONS": [
-      "Draw #b{0} cards and gain #b{1} Energy."
+      "Вы берёте #b{0} карты и получаете #b{1} [E] ."
     ]
   },
   "${ModID}:PreerelxsBlueRibbon": {
     "NAME": "Preerelx's Blue Ribbon",
     "DESCRIPTIONS": [
-      "Gain #b{0} #yVigor."
+      "Даёт #b{0} #yБодрости."
     ]
   },
   "${ModID}:RitualBlood": {
-    "NAME": "Ritual Blood",
+    "NAME": "Ритуальная кровь",
     "DESCRIPTIONS": [
       "#rImpairs the Corrupted Heart."
     ]
@@ -20,19 +20,19 @@
   "${ModID}:NoxiousBrew": {
     "NAME": "Noxious Brew",
     "DESCRIPTIONS": [
-      "Apply #b{0} #yPoison to a random enemy at the end of your turn."
+      "Накладывает #b{0} #yЯда на случайного врага в конце вашего хода."
     ]
   },
   "${ModID}:MushroomSoup": {
-    "NAME": "Mushroom Soup",
+    "NAME": "Грибной суп",
     "DESCRIPTIONS": [
-      "Gain #b{0} #yTemporary #yHP at the end of your turn."
+      "Даёт #b{0} #yВременнного #yОЗ в конце вашего хода."
     ]
   },
   "${ModID}:GremsFire": {
     "NAME": "Grem's Fire",
     "DESCRIPTIONS": [
-      "Deal #b{0} damage to ALL enemies at the end of your turn."
+      "Наносит #b{0} урона ВСЕМ врагам в конце вашего хода."
     ]
   }
 }
