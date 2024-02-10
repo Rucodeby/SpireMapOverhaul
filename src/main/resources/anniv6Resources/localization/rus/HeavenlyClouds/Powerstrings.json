@@ -1,6 +1,6 @@
 {
   "${ModID}:HeavenlyFlightPower": {
-    "NAME": "Flight",
-    "DESCRIPTIONS": ["Receives #b", "% less damage from attacks. After being attacked #b", " times in a single turn, remove this effect for 1 turn and #yStun this creature."]
+    "NAME": "Полёт",
+    "DESCRIPTIONS": ["Получает на #b", "% меньше урона от атак. Снимается на #b1 ход и #yОглушает этого врага, если урон от атак получен #b", " раза в одном ходу."]
   }
 }

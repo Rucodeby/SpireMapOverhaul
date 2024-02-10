@@ -14,7 +14,7 @@
   "${ModID}:RitualBlood": {
     "NAME": "Ритуальная кровь",
     "DESCRIPTIONS": [
-      "#rImpairs the Corrupted Heart."
+      "#rОслабляет Порочное сердце."
     ]
   },
   "${ModID}:NoxiousBrew": {

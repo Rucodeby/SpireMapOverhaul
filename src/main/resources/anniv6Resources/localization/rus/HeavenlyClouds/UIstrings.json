@@ -1,22 +1,22 @@
 {
   "${ModID}:HeavenlyClouds": {
     "TEXT": [
-      "Heavenly Clouds",
-      "The clouds are closer here. The monsters here seemed to have gained the ability of #yFlight. But if you manage to overcome them, perhaps you can gain some of their speed for your cards.",
+      "Райские облака",
+      "Облака ближек этому месту. Здесь монстры, похоже, получили способность к #yПолёту. Но если вам удастся взять над ними верх, то получите часть их скорости для своих карт.",
       "Darkglade"
     ]
   },
   "${ModID}:FlightMod": {
     "TEXT": [
-      "Flighty "
+      "Крылатая "
     ]
   },
   "${ModID}:ByrdTalk": {
     "TEXT": [
-      "The clouds watch over us!",
-      "The skies embrace us!",
-      "Tremble below us, fool!",
-      "Grovel in the dirt, mortal!"
+      "За нами приглядывают с небес!",
+      "Небеса приняли нас!",
+      "Трепещи пред нами, дурачьё!",
+      "Смертный, ты уже одной ногой в могиле!"
     ]
   }
 }

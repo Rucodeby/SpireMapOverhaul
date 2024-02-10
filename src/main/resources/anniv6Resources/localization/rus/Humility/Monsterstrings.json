@@ -1,21 +1,21 @@
 {
   "${ModID}:Hexaghost": {
-    "NAME": "Pentaghost",
+    "NAME": "Пентадух",
     "MOVES": [],
     "DIALOG": []
   },
   "${ModID}:SlaverBlue": {
     "MOVES": [
-      "Trip"
+      "Подножка"
     ]
   },
   "${ModID}:BanditBear": {
     "DIALOG": [
-      "~ROMEOOOOOOOO!!!!~"
+      "~РОМЭЭЭЭООООО!!!!~"
     ]
   },
   "${ModID}:BookOfStabbing": {
-    "NAME": "Book of Punching",
+    "NAME": "Кулакопедия/Дракопедия",
     "MOVES": [],
     "DIALOG": []
   }

@@ -1,23 +1,23 @@
 {
   "${ModID}:DivineProtection": {
-    "NAME": "Snecko's Protection",
+    "NAME": "Защита Змекко",
     "DESCRIPTIONS": [
-      "Can only lose #b%d more HP this turn.",
-      "Can no longer be harmed this turn.",
-      " NL Removed when %s dies."
+      "Может лишиться ещё только #b%d ОЗ в этом ходу.",
+      "Больше не может быть ранен в этом ходу.",
+      " NL Снимается после гибели «%s»."
     ]
   },
   "${ModID}:Split": {
-    "NAME": "Split",
+    "NAME": "Деление",
     "DESCRIPTIONS": [
-      "When its HP is at or below #b75%, will split into #b2 smaller slimes with ",
-      "'s current HP."
+      "Делится на #b2 меньших слизня, потеряв #b75%. Запас ОЗ, который имеет ",
+      " на момент деления, определяет ОЗ слизней."
     ]
   },
   "${ModID}:PainfulPunches": {
-    "NAME": "Painful Punches",
+    "NAME": "Болезненные удары",
     "DESCRIPTIONS": [
-      "Whenever you receive attack damage from this enemy, add a #yWound onto the top of your draw pile."
+      "Добавляет #yРану на верх стопки добора, когда вы теряете ОЗ от атак этого врага."
     ]
   },
   "${ModID}:SneckoBot": {

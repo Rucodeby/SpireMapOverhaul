@@ -1,9 +1,11 @@
 [
   {
-    "PROPER_NAME": "Flighty",
+    "PROPER_NAME": "Крылатые карты",
     "NAMES": [
+      "крылатые карты",
+      "крылатая"
       "flighty"
     ],
-    "DESCRIPTION": "When drawn, draw #b1 card and remove #yFlighty."
+    "DESCRIPTION": "Вы берёте #b1 карту и убираете этот эффект с этой карты, когда добираете её."
   }
 ]

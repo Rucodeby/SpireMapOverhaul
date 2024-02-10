@@ -14,16 +14,16 @@
       "Lose #b{0} [E] at the start of your next turn."]
   },
   "${ModID}:HeartImpairment": {
-    "NAME": "Impaired",
-    "DESCRIPTIONS": ["The Heart is less dangerous."]
+    "NAME": "Ослабление",
+    "DESCRIPTIONS": ["Сердце менее опасно."]
   },
   "${ModID}:NoxiousBrew": {
     "NAME": "Noxious Brew",
     "DESCRIPTIONS": ["At the end of your turn apply #b{0} #yPoison to a random enemy."]
   },
   "${ModID}:MushroomSoup": {
-    "NAME": "Mushroom Soup",
-    "DESCRIPTIONS": ["At the end of your turn gain #b{0} #yTemporary #yHP."]
+    "NAME": "Грибной суп",
+    "DESCRIPTIONS": ["Даёт #b{0} #yВрем. #yОЗ в конце вашего хода."]
   },
   "${ModID}:GremsFire": {
     "NAME": "Grem's Fire",
