@@ -1,6 +1,6 @@
 {
   "${ModID}:BrokenDataDisk": {
-    "NAME": "Сломанный Data Disk",
+    "NAME": "Сломанный диск с данными",
     "FLAVOR": "",
     "DESCRIPTIONS": [
       "Отнимает #b",
@@ -16,16 +16,16 @@
     ]
   },
   "${ModID}:BrokenRedSkull": {
-    "NAME": "Сломанный Red Skull",
+    "NAME": "Сломанный красный череп",
     "FLAVOR": "",
     "DESCRIPTIONS": [
-      "When you are above #b",
-      "% #yHP, you have #b",
-      " extra #yDexterity."
+      "Если ваш запас ОЗ не менее #b",
+      "%, даёт #b",
+      " #yЛовкости."
     ]
   },
   "${ModID}:BrokenOmamori": {
-    "NAME": "Сломанное Омамори",
+    "NAME": "Сломанное омамори",
     "FLAVOR": "",
     "DESCRIPTIONS": [
       "При получении, добавляет #b",
@@ -34,19 +34,19 @@
     ]
   },
   "${ModID}:BrokenDamaru": {
-    "NAME": "Broken Damaru",
+    "NAME": "Сломанное дамару",
     "FLAVOR": "",
     "DESCRIPTIONS": [
-      "At the end of your turn, you may #yExhaust a card in your hand. Gain #yMantra equal to its cost.",
-      "Select a card to exhaust for Mantra."
+      "В конце вашего хода позволяет #yСжечь карту в руке и получить #yМантру равную её стоимости.",
+      "Выберите карту, которую хотите Сжечь и получить Мантру."
 
     ]
   },
   "${ModID}:BrokenWingBoots": {
-    "NAME": "Broken Wing Boots",
+    "NAME": "Сломанные крылатые ботинки",
     "FLAVOR": "",
     "DESCRIPTIONS": [
-      "When you would enter an event in a #y? room, choose between two events."
+      "Выберите одно из двух событий при встрече события в #yТайной комнате."
 
     ]
   },
@@ -54,8 +54,8 @@
     "NAME": "Сломанная содзу",
     "FLAVOR": "",
     "DESCRIPTIONS": [
-      "In-combat potions cost [E] to use. When you spend energy on a potion, use another random potion.",
-      " Energy"
+      "Требует [E] для использования зелий во время боя. Вы выпиваете другое случ. зелье при трате энергии на зелье.",
+      " Энергии"
     ]
   },
   "${ModID}:BrokenSneckoEye": {
@@ -67,20 +67,20 @@
     ]
   },
   "${ModID}:BrokenMawBank": {
-    "NAME": "Broken Maw Bank",
+    "NAME": "Сломанная пасть-копилка",
     "FLAVOR": "",
     "DESCRIPTIONS": [
       "Даёт #b",
       " #yЗолота при след. посещении магазина и отнимает #b",
-      " #yЗолота, когда вы выйдете с него."
+      " #yЗолота, после ухода."
     ]
   },
   "${ModID}:BrokenPrayerWheel": {
-    "NAME": "Broken Prayer Wheel",
+    "NAME": "Сломанный молитвенный барабан",
     "FLAVOR": "",
     "DESCRIPTIONS": [
-      "Card rewards contain #b",
-      " less card, but each #yGold reward is multiplied by #b",
+      "Уменьшает число доступных карт при получении наград на #b",
+      ", но умножает получаемое в них #yЗолото на #b",
       "."
     ]
   },
@@ -88,17 +88,17 @@
     "NAME": "Сломанная матрёшка",
     "FLAVOR": "",
     "DESCRIPTIONS": [
-      "Add #b",
-      " #yRelics to the rewards, but the next #b",
-      " chests you open are empty. If you don't have the Sapphire Key, it will be linked to a #yRelic."
+      "Добавляет в награду после боя #b",
+      " #yРеликвии, но след. #b",
+      " сундука будут пустыми. Если вы ещё не получили Сапфировый ключ, то он будет привязан к #yРеликвии."
     ]
   },
   "${ModID}:BrokenSingingBowl": {
-    "NAME": "Broken Singing Bowl",
+    "NAME": "Сломанная поющая чаша",
     "FLAVOR": "",
     "DESCRIPTIONS": [
-      "Whenever you gain Max HP, #yUpgrade #b",
-        " random card in your deck."
+      "#yУлучшает #b",
+        " случ. карту в колоде, когда вы получаете Макс. ОЗ."
     ]
   }
 }

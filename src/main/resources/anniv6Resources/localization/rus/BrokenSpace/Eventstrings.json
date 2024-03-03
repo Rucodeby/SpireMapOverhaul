@@ -1,11 +1,11 @@
 {
   "${ModID}:WingBootEvent": {
-    "NAME": "Broken Wing Boot",
+    "NAME": "Сломанный крылатый ботинок",
     "DESCRIPTIONS": [
-      "Before you see two portals. Choose."
+      "Пред собой вы видите два портала. Выбирайте."
     ],
     "OPTIONS": [
-      "Broken"
+      "Сломанный"
     ]
   }
 }

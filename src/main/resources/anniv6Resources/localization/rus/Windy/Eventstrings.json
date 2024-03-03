@@ -1,6 +1,6 @@
 {
   "${ModID}:WindyBridge": {
-    "NAME": "Windy Bridge",
+    "NAME": "Мост с ветром",
     "DESCRIPTIONS": [
       "intro1:While crossing a bridge, a @strong@ @gust@ suddenly picks up, almost knocking you over!",
       "intro2:You can barely hold on to all your belongings, much less open your eyes, but you notice the shimmer of a #y~Rare~ #y~card~ on a platform to the side! ...or was it #b~Uncommon?~ NL NL Either way, you should probably hurry up if you don't want to lose anything.",
@@ -26,14 +26,14 @@
     ],
     "OPTIONS": [
       "hold:[Hold On]",
-      "rarity:[Check Rarity] #r",
-      "cost:[Check Cost] #r",
-      "type:[Check Type] #r",
-      "lose:%: #rLose ",
-      "gold: #rGold.",
+      "rarity:[Проверить редкость] #r",
+      "cost:[Проверить стоимость] #r",
+      "type:[Проверить тип] #r",
+      "lose:%: #rПотерять ",
+      "gold: #rзолота.",
       "grab:[Grab] #gGain #gthe #gmystery #gcard. #r",
       "run:[Run] Cross the bridge quickly.",
-      "leave:[Leave]"
+      "leave:[Уйти]"
     ]
   }
 }

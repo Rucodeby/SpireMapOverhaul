@@ -1,14 +1,14 @@
 {
   "${ModID}:DivineVisitor": {
-    "NAME": "Divine Visitor%s",
+    "NAME": "Божественный визит%s",
     "DESCRIPTIONS": [
-      "As you walk, you begin to feel your mind ~tingle...~ Something is here with you. You have been spotted. NL NL #r~You~ #r~are~ #r~not~ #r~alone...~",
+      "Продвигаясь дальше, вы чувствуете как в голове начинает ~покалывать...~ Что-то находится рядом. Вас заметили. NL NL #r~Вы~ #r~не~ #r~один...~",
       " NL NL #yIt #yis #ytime #yto #ypress #yon."
     ],
     "OPTIONS": [
-      "Close your eyes...",
-      "[Accept] #gAdd #g1 %s #gto #gyour #gdeck.",
-      "[Reject]",
+      "Вы закрываете глаза...",
+      "[Принять] #gДобавить #g1 %s #gв #gколоду.",
+      "[Отклонить]",
       "Press on..."
     ]
   }

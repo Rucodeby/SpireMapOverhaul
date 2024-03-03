@@ -4,8 +4,9 @@
       "Grab",
       "Reboot"
     ],
-    "NAME": "Junkbot"
-  },"${ModID}:Peddler": {
+    "NAME": "Мусоробот"
+  },
+  "${ModID}:Peddler": {
   "MOVES": [
     "Free Samples",
     "Rummage",
@@ -14,10 +15,10 @@
     "Escape"
   ],
   "DIALOG": [
-  "Have some free samples!",
-  "You have ",
-  " cards, buy something already!",
-  "Pay up!",
+    "Have some free samples!",
+    "You have ",
+    " cards, buy something already!",
+    "Pay up!",
     "Pleasure doing business with you!"
   ],
   "NAME": "Peddler"

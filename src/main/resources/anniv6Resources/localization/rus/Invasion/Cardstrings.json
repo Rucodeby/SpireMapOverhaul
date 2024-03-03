@@ -1,86 +1,86 @@
 {
   "${ModID}:GildedStrike": {
     "NAME": "Gilded Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+    "DESCRIPTION": "Наносит !D! урона. NL Накладывает !M! Уязвимости."
   },
   "${ModID}:GildedDefend": {
     "NAME": "Gilded Defend",
-    "DESCRIPTION": "Gain !B! Block. NL Lose !M! Dexterity."
+    "DESCRIPTION": "Даёт !B! Защиты. NL Отнимает !M! Ловкости."
   },
   "${ModID}:GildedEssence": {
     "NAME": "Gilded Essence",
-    "DESCRIPTION": "Gain !M! ${ModID}:Plated\u00a0Armor."
+    "DESCRIPTION": "Даёт !M! ${ModID}:Панциря."
   },
   "${ModID}:Necropotence": {
     "NAME": "Necropotence",
-    "DESCRIPTION": "Retain. NL Draw !M! card. NL Lose 1 HP. NL Return this card to your hand.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Draw !M! cards. NL Lose 1 HP. NL Return this card to your hand."
+    "DESCRIPTION": "Оставляется. NL Вы берёте !M! карту. NL Отнимает 1 ОЗ. NL Возвращается в руку после разыгрывания.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Вы берёте !M! карты. NL Отнимает 1 ОЗ. NL Возвращается в руку после разыгрывания."
   },
   "${ModID}:FireblessedBlade": {
     "NAME": "Fire-blessed Blade",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Strength, 1 Dexterity, and 1 Focus. NL Exhaust."
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт !M! Слабости, 1 Ловкости и 1 Фокуса. NL Сжигается."
   },
   "${ModID}:WindblessedBlade": {
     "NAME": "Wind-blessed Blade",
-    "DESCRIPTION": "Deal !D! damage 3 times. NL Gain !B! Block 2 times. NL Apply !M! Weak. NL Exhaust."
+    "DESCRIPTION": "Наносит !D! урона 3 раза. NL Даёт !B! Защиты 2 раза. NL Накладывает !M! Слабости. NL Сжигается."
   },
   "${ModID}:EarthblessedBlade": {
     "NAME": "Earth-blessed Blade",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain !B! ${ModID}:Plated\u00a0Armor. NL Gain !M! Thorns. NL Exhaust."
+    "DESCRIPTION": "Наносит !D! урона ВСЕМ врагам. NL Даёт !B! ${ModID}:Панциря. NL Даёт !M! Шипов. NL Сжигается."
   },
   "${ModID}:IceblessedBlade": {
     "NAME": "Ice-blessed Blade",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Artifact. NL Gain 1 *Buffer. NL Exhaust."
+    "DESCRIPTION": "Наносит !D! урона. NL Даёт !M! Артефакта. NL Даёт 1 ${ModID}:Буфера. NL Сжигается."
   },
   "${ModID}:VoidblessedBlade": {
     "NAME": "Void-blessed Blade",
-    "DESCRIPTION": "Deal !D! damage !M! times. NL Enemy loses !M! Strength. NL Gain 1 *Blur. NL Exhaust."
+    "DESCRIPTION": "Наносит !D! урона !M! раза. NL Враг теряет !M! Силы. NL Даёт 1 ${ModID}:Неуловимости. NL Сжигается."
   },
   "${ModID}:Languish": {
     "NAME": "Languish",
-    "DESCRIPTION": "Ethereal. NL ALL enemies lose !M! Strength this turn and lose !M! HP. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "ALL enemies lose !M! Strength this turn and lose !M! HP. NL Exhaust."
+    "DESCRIPTION": "Эфирная. NL ВСЕ враги теряют !M! ОЗ и Силы до конца своего хода. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "ВСЕ враги теряют !M! ОЗ и Силы до конца своего хода. NL Сжигается."
   },
   "${ModID}:MirarisWake": {
     "NAME": "Mirari's Wake",
-    "DESCRIPTION": "Ethereal. NL Gain !M! Strength. NL Gain !M! Dexterity. NL At the start of your turn gain [E] .",
-    "UPGRADE_DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity. NL At the start of your turn, gain [E] ."
+    "DESCRIPTION": "Эфирная. NL Даёт !M! Силы. NL Даёт !M! Ловкости. NL Даёт [E] в начале каждого вашего хода.",
+    "UPGRADE_DESCRIPTION": "Даёт !M! Силы. NL Даёт !M! Ловкости. NL Даёт [E] в начале каждого вашего хода."
   },
   "${ModID}:WallOfBlossoms": {
     "NAME": "Wall of Blossoms",
-    "DESCRIPTION": "Gain !M! Dexterity. NL Draw 1 card."
+    "DESCRIPTION": "Даёт !M! Ловкости. NL Вы берёте 1 карту."
   },
   "${ModID}:DarkRitual": {
     "NAME": "Dark Ritual",
-    "DESCRIPTION": "Gain [E] [E] [E] . NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Gain [E] [E] [E] . NL Exhaust."
+    "DESCRIPTION": "Даёт [E] [E] [E] . NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Даёт [E] [E] [E] . NL Сжигается."
   },
   "${ModID}:LightningHelix": {
     "NAME": "Lightning Helix",
-    "DESCRIPTION": "Deal !D! damage. NL Heal !M! HP. NL Exhaust."
+    "DESCRIPTION": "Наносит !D! урона. NL Восполняет !M! ОЗ. NL Сжигается."
   },
   "${ModID}:Foresee": {
     "NAME": "Foresee",
-    "DESCRIPTION": "Scry !M!. NL Draw 2 cards."
+    "DESCRIPTION": "Вы Предсказываете !M! карты. NL Вы берёте 2 карты."
   },
   "${ModID}:SteelWall": {
     "NAME": "Steel Wall",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Metallicize. NL Exhaust."
+    "DESCRIPTION": "Даёт !B! Защиты. NL Даёт !M! ${ModID}:Металлизации. NL Сжигается."
   },
   "${ModID}:LightningBolt": {
     "NAME": "Lightning Bolt",
-    "DESCRIPTION": "Deal !D! damage. NL Shuffle this card into your draw pile."
+    "DESCRIPTION": "Наносит !D! урона. NL Сбрасывается в стопку добора."
   },
   "${ModID}:Staggershock": {
     "NAME": "Staggershock",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. At the start of your next turn, play this card again."
+    "DESCRIPTION": "Наносит !D! урона ВСЕМ врагам. Разыгрывается ещё раз в начале след. хода."
   },
   "${ModID}:HandOfTheAbyss": {
     "NAME": "Hand of the Abyss",
-    "DESCRIPTION": "Whenever an Attack deals unblocked damage, apply !M! ${ModID}:Abysstouched."
+    "DESCRIPTION": "Накладывает на врага !M! ${ModID}:Abysstouched, когда Атака наносит урон по его ОЗ."
   },
   "${ModID}:BrokenCrystal": {
-    "NAME": "Broken Crystal",
-    "DESCRIPTION": "When you draw this, randomize its cost and draw a card. NL Reduce regeneration of ALL enemies by !M!. NL Exhaust."
+    "NAME": "Сломанный кристалл",
+    "DESCRIPTION": "Вы меняете стоимость этой картын на случайную и берёте карту, когда добирате её. NL Reduce regeneration of ALL enemies by !M!. NL Сжигается."
   }
 }
